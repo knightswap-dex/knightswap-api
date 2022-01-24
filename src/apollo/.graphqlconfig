@@ -1,0 +1,15 @@
+{
+  "name": "BSCswap",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "BSCswap": {
+        "url": "https://graphapi.cafeswap.finance/subgraphs/name/cafeswap/cafeswap-subgraph-bsc",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
