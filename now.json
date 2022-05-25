@@ -2,7 +2,7 @@
     "version": 2,
     "routes": [
       {
-        "source": "/(.*)",
+        "src": "/(.*)",
                 "headers": {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept, Content-Length, Origin, User-Agent",
