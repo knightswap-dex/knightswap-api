@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [{ "src": "src/**/*.ts", "use": "@now/node" }],
   "routes": [
     { "src": "/api/v2/totalliquidity", "dest": "/src/totalliquidity.ts", "methods": ["GET"] },
@@ -23,5 +23,17 @@
       "methods": ["GET"]
     },
     {"src": "/.*", "dest": "/src/404.ts"}
+  ],
+  "headers": [
+    {
+      "source": "*",
+      "headers": [
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+      ]
+    }
   ]
+
 }
