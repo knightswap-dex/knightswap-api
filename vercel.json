@@ -23,17 +23,7 @@
       "methods": ["GET"]
     },
     {"src": "/.*", "dest": "/src/404.ts"}
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "access-control-allow-origin",
-          "value": "*"
-        }
-      ]
-    }
   ]
+  
  
 }
